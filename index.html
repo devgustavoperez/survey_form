@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--QUITAR ETIQUETA META VIEWPORT ANTES DE COPIAR A FREECODECAMP-->
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">LinguaSphere Academy Survey Form</h1>
+    <p id="description">Fill out the form so we can help you start your exciting learning adventure</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name" id="name-label" class="block personal-info-label"> Name
+                <input type="text" name="nname" id="name" required placeholder="Type your full name" class="block personal-info-input">
+            </label>
+            <label for="email" id="email-label" class="block personal-info-label"> Email
+                <input type="email" name="nemail" id="email" required placeholder="Type your email" class="block personal-info-input">
+            </label>
+            <label for="number" id="number-label" class="block personal-info-label"> Age
+                <input type="number" name="nnumber" id="number" required min="13" max="120" placeholder="Type your age" class="block personal-info-input">
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Learning Info</legend>
+            <h2>Which language would you like to learn?</h2>
+            <label for="spanish" class="block language-label">
+                <input type="checkbox" name="nspanish" id="spanish" value="spanish"> Spanish
+            </label>
+            <label for="portuguese" class="block language-label">
+                <input type="checkbox" name="nportuguese" id="portuguese" value="portuguese"> Portuguese
+            </label>
+            <label for="german" class="block language-label">
+                <input type="checkbox" name="ngerman" id="german" value="german"> German
+            </label>
+            <label for="french" class="block language-label">
+                <input type="checkbox" name="nfrench" id="french" value="french"> French
+            </label>
+            <label for="italian" class="block language-label">
+                <input type="checkbox" name="nitalian" id="italian" value="italian"> Italian
+            </label>
+            <label for="other-language" class="block language-label">
+                <input type="checkbox" name="nother-language" id="other-language" value="other-language"> Other
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Availability</legend>
+            <h2>Preferred Days</h2>
+            <label for="mon-wed" class="block availability-label">
+                <input type="radio" name="preferred-days" id="mon-wed" value="mon-wed"> Monday and Wednesday
+            </label>
+            <label for="tue-thu" class="block availability-label">
+                <input type="radio" name="preferred-days" id="tue-thu" value="tue-thu">
+                Tuesday and Thursday
+            </label>
+            <label for="fri-sat" class="block availability-label">
+                <input type="radio" name="preferred-days" id="fri-sat" value="fri-sat">
+                Friday and Saturday
+            </label>
+
+            <h2 id="last-h2">Class Shift</h2>
+            <label for="morning" class="block availability-label">
+                <input type="radio" name="shift" id="morning" value="morning">
+                Morning
+            </label>
+            <label for="afternoon" class="block availability-label">
+                <input type="radio" name="shift" id="afternoon" value="afternoon">
+                Afternoon
+            </label>
+            <label for="evening" class="block availability-label">
+                <input type="radio" name="shift" id="evening" value="evening">
+                Evening
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Info</legend>
+            <label for="dropdown">Which option best describes your learning goal?</label>
+            <select name="goal" id="dropdown" class="block">
+                <option value="">Select an option</option>
+                <option value="1">Job opportunities</option>
+                <option value="2">Study abroad</option>
+                <option value="3">Business travel</option>
+                <option value="4">Academic certifications</option>
+                <option value="5">Personal relationships</option>
+            </select>
+            <label for="additional-info">Tell us more about your learning goals
+                <textarea name="additional-info" id="additional-info" placeholder="My learning goals are..." class="block" rows="5"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Submit" id="submit" class="block">
+        </fieldset>
+    </form>
+</body>
+</html>
