@@ -5,8 +5,12 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #271e2f;
-    color: #f5f0f6b9;
+    background-color: #3c1642c6;
+    background-image: url(./img/mimi-thian-vdXMSiX-n6M-unsplash.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
 }
 
 form {
@@ -18,7 +22,9 @@ form {
     padding: 1.5em;
     margin-bottom: 30px;
     border-radius: 20px;
-    box-shadow: 0 0 3px #ffffff7a;
+    box-shadow: 0 0 3px #fff;
+
+    backdrop-filter: blur(20px);
 }
 
 #title, #description {
@@ -35,7 +41,7 @@ form {
 
 fieldset {
     padding: 12px;
-    border: 1px solid #f5f0f6b9;
+    border: 1px solid #fff;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -68,7 +74,7 @@ legend, label {
 
 .personal-info-input {
     background-color: #fff;
-    border: 1px solid #f5f0f6b9;
+    border: 1px solid #fff;
     border-radius: 3px;
     color: #271e2f;
     height: 30px;
@@ -92,7 +98,7 @@ input[type="checkbox"], input[type="radio"] {
 
 select {
     background-color: #fff;
-    border: 1px solid #f5f0f6b9;
+    border: 1px solid #fff;
     border-radius: 3px;
     color: #271e2f;
     height: 30px;
@@ -120,6 +126,6 @@ input[type="submit"] {
     margin: auto;
     font-size: 1em;
     color: #fff;
-    background-color: yellowgreen;
+    background-color: #129a7e;
     border: none;
 }
